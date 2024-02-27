@@ -22,7 +22,7 @@ if len(sys.argv) not in (3, 4, 5):
 ignore = sys.argv[3].split(",") if len(sys.argv) >= 4 else []
 skip = sys.argv[4].split(",") if len(sys.argv) == 5 else []
 
-URL_BASE = f"https://github.com/CloudArmor/{sys.argv[0]}/blob/HEAD"
+URL_BASE = f"https://github.com/TheAlgorithms/{sys.argv[0]}/blob/HEAD"
 
 
 def good_file_paths(top_dir: str = ".") -> Iterator[str]:
