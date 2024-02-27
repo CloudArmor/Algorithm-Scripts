@@ -1,4 +1,4 @@
-name: "File Selector"
+name: "Filename Formatter"
 description: "Format filenames into the acceptable format by CloudArmor organization"
 author: "CloudArmor"
 inputs:
@@ -25,7 +25,7 @@ runs:
     - name: Running the formatter
       shell: bash
       run: |
-        ${{ github.action_path }}/file_selector.sh ${{ inputs.working-directory }} ${{ inputs.filetypes }} ${{ inputs.ignore-files }}
+        ${{ github.action_path }}/filename_formatter.sh ${{ inputs.working-directory }} ${{ inputs.filetypes }} ${{ inputs.ignore-files }}
     - name: Committing changes
       shell: bash
       run: |
