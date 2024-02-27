@@ -1,6 +1,6 @@
 name: "Build directory file"
 description: "Builds a DIRECTORY.md file with all the algorithms in one repository."
-author: "TheAlgorithms"
+author: "CloudArmor"
 inputs:
   language:
     description: The language used in your repository

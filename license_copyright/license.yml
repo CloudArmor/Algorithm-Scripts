@@ -1,6 +1,6 @@
 name: 'Update copyright license'
 description: Updates copyright license year automatically
-author: "TheAlgorithms"
+author: "CloudArmor"
 inputs:
   filename:
     description: "License filename"
@@ -15,7 +15,7 @@ runs:
   steps:
     - name: Update the License
       run: |
-        (echo "Copyright (C) ${{ inputs.initial_year }}-$(date +"%Y") TheAlgorithms and contributors";  tail -n +2 ${{ inputs.filename }}) > License.tmp
+        (echo "Copyright (C) ${{ inputs.initial_year }}-$(date +"%Y") CloudArmor and contributors";  tail -n +2 ${{ inputs.filename }}) > License.tmp
         mv License.tmp ${{ inputs.filename }}
     - name: Setup Git configurations
       shell: bash
