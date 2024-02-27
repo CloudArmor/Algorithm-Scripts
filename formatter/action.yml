@@ -1,6 +1,6 @@
 name: "Filename Formatter"
-description: "Format filenames into the acceptable format by CloudArmor organization"
-author: "CloudArmor"
+description: "Format filenames into the acceptable format by TheAlgorithms organization"
+author: "TheAlgorithms"
 inputs:
   filetypes:
     description: Filter files by specified file types (comma-separated values in a string.) Maximum two values. E.g. `.cpp,.hpp`
