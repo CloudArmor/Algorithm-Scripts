@@ -1,5 +1,8 @@
 name: DIRECTORY.md workflow (ignore directories)
-on: [workflow_dispatch]
+on:
+  push:
+    branches:
+      - 'main'
 jobs:
   directory_builder:
     runs-on: ubuntu-latest
@@ -12,4 +15,3 @@ jobs:
           working-directory: .
           filetypes: .cpp,.hpp
           ignored-directories: ./test
-          branch-name: directory-update-ignore
